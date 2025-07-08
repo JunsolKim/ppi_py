@@ -1902,4 +1902,4 @@ def ppi_distribution_label_shift_ci(
         count_ub = int(binom.ppf(1 - (alpha - delta) / 2, N, qyhat_ub))
         return count_lb, count_ub
     else:
-        return qyhat_lb, qyhat_ub
+        return qyhat_lb, qyhat_ub, point_estimate
